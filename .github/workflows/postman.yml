@@ -30,8 +30,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Newman
-      run: npm install -g newman
+    - name: Install packages
+      run: npm install
     - name: Run test API
       run: node app.js
     - name: Run the Postman tests
