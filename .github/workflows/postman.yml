@@ -32,5 +32,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Newman
       run: npm install -g newman
+    - name: Run test API
+      run: node app.js
     - name: Run the Postman tests
       run: newman run "test.postman_collection.json"
