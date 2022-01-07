@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "8d97eada-3e8c-4763-ab71-f37e8ec25e6b",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DarkMagician",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://db.ygoprodeck.com/api/v7/cardinfo.php?name=Dark Magician",
+					"protocol": "https",
+					"host": [
+						"db",
+						"ygoprodeck",
+						"com"
+					],
+					"path": [
+						"api",
+						"v7",
+						"cardinfo.php"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Dark Magician"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NonExistingCard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://db.ygoprodeck.com/api/v7/cardinfo.php?name=Henk",
+					"protocol": "https",
+					"host": [
+						"db",
+						"ygoprodeck",
+						"com"
+					],
+					"path": [
+						"api",
+						"v7",
+						"cardinfo.php"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Henk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

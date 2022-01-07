@@ -1,0 +1,14 @@
+# Dit is de hele job in .yml
+.apitest:
+  variables:
+    POSTMAN_COLLECTION: https://api.getpostman.com/collections/{collecion uid en api key}
+    POSTMAN_ENVIRONMENT: https://api.getpostman.com/environments/enviroment uid en api key}
+  image:
+    name: postman/newman:latest
+    entrypoint: [""]
+  api_test:
+    stage: api_test
+    needs: []
+    extends: .apitest
+    script:
+    - newman run ${POSTMAN_COLLECTION} -e ${POSTMAN_ENVIRONMENT}
