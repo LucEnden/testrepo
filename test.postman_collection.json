@@ -60,6 +60,15 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/products"
+			},
+			"response": []
 		}
 	]
 }
