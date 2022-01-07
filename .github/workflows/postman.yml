@@ -30,6 +30,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install Newman
       run: npm install -g newman
     - name: Run the Postman tests
       run: newman run "test.postman_collection.json"
